@@ -1,0 +1,26 @@
+[
+	{
+		"id": 1,
+		"brand": "GlassOnly",
+		"material": "plastic",
+		"opacity": 45,
+		"lensPower": 0.25,
+		"price": 45000
+	},
+	{
+		"id": 2,
+		"brand": "Petry",
+		"material": "glass",
+		"opacity": 45,
+		"lensPower": 0.5,
+		"price": 55000
+	},
+	{
+		"id": 3,
+		"brand": "LookAs",
+		"material": "plastic",
+		"opacity": 75.8,
+		"lensPower": 0,
+		"price": 33000
+	}
+]
