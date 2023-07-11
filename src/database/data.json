@@ -22,5 +22,13 @@
 		"opacity": 75.8,
 		"lensPower": 0,
 		"price": 33000
+	},
+	{
+		"id": 4,
+		"brand": "wew",
+		"material": "weqwe",
+		"opacity": 23,
+		"lensPower": 43,
+		"price": 123123
 	}
 ]
