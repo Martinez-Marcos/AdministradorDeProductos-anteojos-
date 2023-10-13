@@ -3,6 +3,8 @@ const express = require("express");
 const server = express();
 require('dotenv').config();
 
+const products = require('./routes/products.js');
+
 // Variables del servidor
 server.set('PORT', process.env.SERVER_PORT || 4000);
 server.set('HOST', process.env.SERVER_HOST || "127.0.0.1");
@@ -12,7 +14,7 @@ server.use(express.json());
 server.use(express.urlencoded({ extended: true }));
 
 // Rutas
-server.use('/glasses', require('./routes/products.js'));
+server.use('/glasses', products);
 
 //Direccionamiento de rutas inexistentes
 server.use('*', (req, res) => {

@@ -9,7 +9,7 @@ router.get('/', (req, res) => {
         .catch((error) => res.status(200).send(error.message));
 });
 
-router.get('/search/:id', (req, res) => {
+router.get('/:id', (req, res) => {
     const { id } = req.params;
 
     findById(id)
@@ -17,7 +17,7 @@ router.get('/search/:id', (req, res) => {
         .catch((error) => res.status(500).send(error.message));
 });
 
-router.post('/add', (req, res) => {
+router.post('/', (req, res) => {
     const newProduct = req.body;
     console.log(newProduct);
     create(newProduct)
@@ -25,7 +25,7 @@ router.post('/add', (req, res) => {
         .catch((error) => res.status(500).send(error.message));
 });
 
-router.put('/update', (req, res) => {
+router.put('/', (req, res) => {
     const updateProduct = req.body;
 
     update(updateProduct)
@@ -33,7 +33,7 @@ router.put('/update', (req, res) => {
         .catch((error) => res.status(500).send(error.message));
 });
 
-router.delete('/delete/:id', (req, res) => {
+router.delete('/:id', (req, res) => {
     const { id } = req.params;
     destroy(id)
         .then((products) => res.status(200).send(products))
